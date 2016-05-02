@@ -1,0 +1,24 @@
+{
+  "name": "ng-101",
+  "version": "1.0.0",
+  "description": "an intro to angular-js tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomarquez/ng-101.git"
+  },
+  "keywords": [
+    "ng-101",
+    "angular",
+    "tutorial"
+  ],
+  "author": "joanna marquez johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jomarquez/ng-101/issues"
+  },
+  "homepage": "https://github.com/jomarquez/ng-101#readme"
+}
