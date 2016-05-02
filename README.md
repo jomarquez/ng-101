@@ -69,3 +69,34 @@ Setup Project
     Is this ok? (yes) yes
 ```
 
+Install gulp
+> `npm install gulp --save-dev`
+
+Install browser-sync
+> `npm install browser-sync --save-dev`
+
+Create gulpfile and create watch task to spin up server and automatically refresh browser on save
+> `touch gulpfile.js`
+
+```
+    ### gulpfile.js ###
+    var gulp = require('gulp');
+    var browserSync = require('browser-sync').create();
+
+    gulp.task('watch', ['browserSync'], function (){
+      // Reloads the browser whenever HTML or JS files change
+      gulp.watch('src/client/app/**/*.html', browserSync.reload);
+      gulp.watch('src/client/app/**/*.js', browserSync.reload);
+    });
+
+    gulp.task('browserSync', function() {
+      browserSync.init({
+        server: {
+          baseDir: 'src/client'
+        },
+      })
+    })
+```
+
+Start the server
+> `gulp watch`
